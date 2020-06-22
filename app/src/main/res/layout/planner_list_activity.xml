@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_24px"
+        android:layout_marginBottom="@dimen/dp_24px"
+        android:background="@color/color_ffffff"
+        android:paddingTop="@dimen/dp_24px"
+        android:paddingBottom="@dimen/dp_24px"
+        android:paddingLeft="@dimen/dp_50px"
+        android:paddingRight="@dimen/dp_50px">
+
+        <RelativeLayout android:id="@+id/planner_layout_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView android:id="@+id/icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/search"
+                android:scaleType="centerCrop"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:onClick="onClick"
+                />
+
+            <EditText android:id="@+id/planner_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/icon"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="@string/planner_select_hint_search"
+                style="@style/text_normal"/>
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/planner_layout_search"
+            android:layout_marginTop="2dp"
+            android:background="@color/color_e11c1a" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>

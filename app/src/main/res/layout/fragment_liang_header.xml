@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liangRadioTab"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:checkedButton="@+id/liang_r1"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/red">
+
+    <RelativeLayout android:id="@+id/liang_r1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/selector_color_white"
+        android:layout_marginBottom="1px">
+
+        <TextView android:id="@+id/liang_radio_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            style="@style/liang_number_style"
+            android:text="@string/liang_radio_1"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout android:id="@+id/liang_r2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/selector_color_white"
+        android:layout_marginBottom="0px">
+
+        <TextView android:id="@+id/liang_radio_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            style="@style/liang_number_style"
+            android:text="@string/liang_radio_2"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/liang_r3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/selector_color_white"
+        android:layout_marginBottom="0px">
+
+        <TextView android:id="@+id/liang_radio_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            style="@style/liang_number_style"
+            android:text="@string/liang_radio_3"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/liang_r4"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/selector_color_white"
+        android:layout_marginBottom="0px">
+
+        <TextView android:id="@+id/liang_radio_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            style="@style/liang_number_style"
+            android:text="@string/liang_radio_4"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/liang_r5"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/selector_color_white"
+        android:layout_marginBottom="0px">
+
+        <TextView android:id="@+id/liang_radio_tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            style="@style/liang_number_style"
+            android:text="@string/liang_radio_5"/>
+    </RelativeLayout>
+</LinearLayout>

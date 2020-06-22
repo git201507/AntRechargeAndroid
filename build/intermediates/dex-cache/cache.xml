@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\exploded-aar\com.android.support\transition\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\com.android.support-transition-26.0.0-alpha1_1459cdfaaf688cdb89967273af027b99825cdc76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\libs\okhttp-v2.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2e7bc7033dc2c8423e661224171b3133fb155b28">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\okhttp-v2.3.0_dab4410a00e28b6388853abc605c72dc38f05125.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-26.0.0-alpha1_acdd9a8f9657a59e4dc62aabd1e6a1bf53077108.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-26.0.0-alpha1_3885009e96c668e8a8fc9f1ec3fdcc1676b067d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-26.0.0-alpha1_73640b07b3f48b738ac4213687a4f48d1c003937.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-26.0.0-alpha1_bd656b9f1aa488282706364e49c2755a5fe9c27f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-26.0.0-alpha1_8bbacd8b18217a10faf356cc563b5cefbbd591c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-26.0.0-alpha1_aa185a24d7a2900cb1d25f5386a16305ecb73b2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\libs\jackson-all-v1.9.11.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="62246d59c8188052433b28c5fbd50e4e71804f26">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\jackson-all-v1.9.11_6421d1da2386269afef87e1944c076ce2fb77b2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\libs\paymax.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b9d5244abd453a2f18289e04b39715939dd1dbd9">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\paymax_481bc2da3b1d14c8c262ce3dc26ba0a29522c570.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\exploded-aar\com.android.support\design\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\com.android.support-design-26.0.0-alpha1_a0c48ae36080f11be71b0bab0f98b6eb7e716bf2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-26.0.0-alpha1_0a67b2fb4b9e481bd94dae3845a4a1ae3825827d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-26.0.0-alpha1_6160010d1032c1c0b981323c797522ce979b5e6b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\libs\alipaySdk-20161222.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="341e981a9f87882cc427113db58c7a01f6b5dde4">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\alipaySdk-20161222_f0796ca5049eccf99350ddac2296d257e4b96c47.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\support-annotations-26.0.0-alpha1_e83beef4ad75c07f8f8fc78d609c35afbc2a7528.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\libs\retrofit-v1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\retrofit-v1.9.0_8ba990311077ebfb0440f1915e18f8e05e554d4d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\libs\libammsdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e8db000948e58e4ef6b7a1a54e92e7040e7037d5">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\libammsdk_c5c410b33b2d202ce9795d4b32607097f4a970db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-26.0.0-alpha1_e211d3b98490d4cb5d8a0fe6fa06be39137d098a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-26.0.0-alpha1_632b21d28c7a7521ab13e8f0b572b7e5cb01662a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudioProjects\AntRechargeAndroid\app\libs\okio-v1.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1b355f73402020c5a0dcca58affc3ec3dfeabac1">
+        <dex dex="D:\AndroidStudioProjects\AntRechargeAndroid\app\build\intermediates\pre-dexed\debug\okio-v1.3.0_2c6bc889852ef0021cf7359302575955bd442c3c.jar" />
+    </item>
+
+</items>

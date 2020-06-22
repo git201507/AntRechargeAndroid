@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-suto/com.ant.recharge"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView android:id="@+id/order_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:text="13312345678（北京）联通网络，无套餐，国内无漫游"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout android:id="@+id/order_li_right"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/order_tv_status"
+                    android:layout_width="90dip"
+                    android:layout_height="25dip"
+                    android:layout_margin="2dp"
+                    android:text="状态"/>
+
+                <Button
+                    android:id="@+id/order_btn_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/line_blue"
+                    android:layout_marginTop="5dp"
+                    android:text="查看详情"
+                    android:textColor="@color/color_white"/>
+
+            </LinearLayout>
+            <TableLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/order_li_right"
+                android:layout_alignBaseline="@+id/order_li_right"
+                android:layout_marginLeft="10dp">
+
+                <TableRow android:layout_marginBottom="2.5dp"
+                    android:layout_marginTop="2.5dp">
+
+                    <TextView
+                        android:id="@+id/order_name_prize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="        价格¥10元"
+                        android:textColor="@color/color_e11c1a" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="2.5dp"
+                    android:layout_marginTop="2.5dp">
+
+                    <TextView
+                        android:id="@+id/order_name_lowprize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_e11c1a" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="2.5dp"
+                    android:layout_marginTop="2.5dp">
+                    <TextView android:id="@+id/order_happen_time"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="时间：2017/01/01 11:11"/>
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

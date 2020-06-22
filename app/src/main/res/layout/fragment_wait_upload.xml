@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView android:id="@+id/text_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        style="@style/text_normal"
+        android:text="正在拼命加载中……"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView android:id="@+id/name_wait_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:text="13988888888 (北京)，联通网络，国内无漫游，无套餐。。。"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@color/line"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/wait_upload_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已付款"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <TableLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/wait_upload_state">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:text="价格" />
+
+                        <TextView
+                            android:id="@+id/wait_upload_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_weight="2"
+                            android:text="¥10元" />
+                    </TableRow>
+                    <TableRow >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:text="地址" />
+
+                        <TextView
+                            android:id="@+id/wait_upload_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:layout_weight="2"
+                            android:text="¥10元" />
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/wait_upload_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_weight="1"
+                    android:text="归属地：沈阳" />
+
+                <TextView
+                    android:id="@+id/wait_upload_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:layout_weight="1"
+                    android:text="运营商：联通" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wait_upload_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_weight="1"
+                android:text="@string/detail_description_order" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/state_text_upload"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_margin="2dp"-->
+                    <!--android:text="立即购买" />-->
+                <TableLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/buy_btn_wait"
+                    android:layout_alignTop="@+id/buy_btn_wait"
+                    android:layout_alignBottom="@+id/buy_btn_wait">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="@string/wait_upload_zheng"/>
+                        <ImageView android:id="@+id/zheng_img"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:src="@drawable/default_zheng"/>
+
+                        <Button
+                            android:id="@+id/zheng_btn_photo"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_style"
+                            android:text="@string/photo_btn_title"
+                            android:textColor="@color/color_white"
+                            android:layout_marginTop="15dp" />
+
+                        <Button
+                            android:id="@+id/zheng_btn_camera"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_style"
+                            android:text="@string/camera_btn_title"
+                            android:textColor="@color/color_white"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="15dp"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="@string/wait_upload_fan"/>
+
+                        <ImageView
+                            android:id="@+id/fan_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_weight="1"
+                            android:src="@drawable/default_fan"/>
+
+                        <Button
+                            android:id="@+id/fan_btn_photo"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_style"
+                            android:text="@string/photo_btn_title"
+                            android:textColor="@color/color_white"
+                            android:layout_marginTop="15dp"/>
+
+                        <Button
+                            android:id="@+id/fan_btn_camera"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_style"
+                            android:text="@string/camera_btn_title"
+                            android:textColor="@color/color_white"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="15dp"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="25dp"
+                            android:text="@string/wait_upload_shou"/>
+                        <ImageView android:id="@+id/shou_img"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:src="@drawable/default_shou"/>
+
+                        <Button
+                            android:id="@+id/shou_btn_photo"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_style"
+                            android:text="@string/photo_btn_title"
+                            android:textColor="@color/color_white"
+                            android:layout_marginTop="15dp"/>
+
+                        <Button
+                            android:id="@+id/shou_btn_camera"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_style"
+                            android:text="@string/camera_btn_title"
+                            android:textColor="@color/color_white"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="15dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/confirm_btn_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:text="确认"
+                    android:textColor="@color/color_white" />
+
+                <Button
+                    android:id="@+id/cancel_btn_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:text="取消"
+                    android:textColor="@color/color_white" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>

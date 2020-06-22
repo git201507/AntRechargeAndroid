@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|"
+    android:orientation="vertical"
+    android:background="@color/main_color">
+
+    <include layout="@layout/toolbar" />
+
+    <com.ant.recharge.common.pull2fresh.PullToRefreshListView
+        android:layout_marginTop="15dp"
+        android:id="@+id/financial_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.ant.recharge.common.pull2fresh.PullToRefreshListView>
+</LinearLayout>

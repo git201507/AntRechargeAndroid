@@ -1,0 +1,291 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/main_color">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_50px">
+
+            <LinearLayout android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150px"
+                android:paddingLeft="@dimen/dp_24px"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <include layout="@layout/icon_login_mobile" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_mobile"
+                    style="@style/text_normal"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    android:background="@null"/>
+
+
+            </LinearLayout>
+            <include layout="@layout/line_white"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_130px"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_24px"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@android:color/white"
+                android:visibility="gone">
+
+                <include layout="@layout/icon_regist_invitationcode" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!---->
+                    <ImageView android:id="@+id/imagecode_right"
+                        android:layout_width="70dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:clickable="true"
+                        android:onClick="onClick"/>
+
+                    <EditText
+                        android:id="@+id/get_imagecode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="图形验证码"
+                        style="@style/text_normal"
+                        android:inputType="text"
+                        android:maxLength="4"
+                        android:padding="10dp"
+                        android:background="@null"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/imagecode_right"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <!--<include layout="@layout/line_white"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_130px"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_24px"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@android:color/white">
+
+                <!--<include layout="@layout/icon_regist_invitationcode" />-->
+
+
+                <include layout="@layout/icon_login_pass" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.ant.recharge.common.ui.ValidateCodeView
+                        android:id="@+id/code_layout"
+                        android:layout_alignParentRight="true"
+                        style="@style/text_validate_code"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:onClick="onClick"
+                        />
+
+
+                    <View android:id="@+id/code_split"
+                        android:layout_width="1dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/line"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/code_layout"/>
+
+                    <EditText
+                        android:id="@+id/code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_code"
+                        style="@style/text_normal"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:padding="10dp"
+                        android:background="@null"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/code_split"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <include layout="@layout/line_white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_130px"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_24px"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@android:color/white">
+
+                <include layout="@layout/icon_login_pass" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_password"
+                    style="@style/text_normal"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    android:background="@null"/>
+
+            </LinearLayout>
+            <include layout="@layout/line_white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_130px"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_24px"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@android:color/white">
+
+                <include layout="@layout/icon_login_pass" />
+
+                <EditText
+                    android:id="@+id/password_repeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/regist_repeat_pass"
+                    style="@style/text_normal"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    android:background="@null"/>
+
+            </LinearLayout>
+            <!--<include layout="@layout/line_white"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/dp_130px"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingLeft="@dimen/dp_24px"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                <!--android:background="@android:color/white">-->
+
+                <!--<include layout="@layout/icon_regist_invitationcode" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/invitationcode"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="@string/regist_hint_invitationcode"-->
+                    <!--style="@style/text_normal"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:background="@null"/>-->
+
+            <!--</LinearLayout>-->
+
+            <RelativeLayout android:id="@+id/regist_protocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_50px"
+                android:paddingBottom="@dimen/dp_50px"
+                android:paddingRight="@dimen/dp_50px"
+                android:paddingLeft="0dp"
+                android:layout_marginLeft="@dimen/dp_24px"
+                android:onClick="onClick"
+                android:visibility="gone">
+
+                <TextView android:id="@+id/regist_protocal2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/regist_protocal"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/color_4c4c4c"
+                    android:clickable="true"
+                    />
+
+                <View
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/regist_protocal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignRight="@+id/regist_protocal2"
+                    android:background="@color/red"/>
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/dp_50px"
+                android:text="@string/regist_btn"
+                android:textSize="@dimen/sp_20"
+                android:textColor="@android:color/white"
+                android:background="@drawable/shape_rectangle_rounded_red"
+                android:onClick="onClick"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_50px"
+                android:layout_marginBottom="@dimen/dp_50px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/regist_commitment"
+                    android:textColor="@color/line_blue"
+                    android:textSize="@dimen/sp_14"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

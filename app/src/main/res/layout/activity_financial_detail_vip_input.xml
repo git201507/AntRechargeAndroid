@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/a_4_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:layout_marginLeft="15dp">
+
+
+    <LinearLayout android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text_normal"
+            android:text="理财师："/>
+
+        <TextView
+            android:id="@+id/planner_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击选择理财师"
+            style="@style/text_normal"
+            android:textSize="@dimen/sp_14"
+            android:background="@drawable/edittext_bg"/>
+    </LinearLayout>
+
+    <CheckBox android:id="@+id/vip_chipiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:button="@drawable/checkbox"
+        android:textSize="28px"
+        android:layout_marginLeft="6px"
+        style="@style/text_normal"
+        android:text="  是否持票"/>
+
+
+    <RelativeLayout android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!---->
+        <ImageView android:id="@+id/imagecode_right"
+            android:layout_width="70dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:onClick="onClick"/>
+
+        <EditText
+            android:id="@+id/get_imagecode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="图形验证码"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/sp_12"
+            android:inputType="text"
+            android:maxLength="4"
+            android:padding="10dp"
+            android:background="@drawable/edittext_bg"
+            android:textCursorDrawable="@drawable/cursor_red"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/imagecode_right"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"/>
+
+    </RelativeLayout>
+</LinearLayout>

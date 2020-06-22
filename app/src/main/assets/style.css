@@ -1,0 +1,25 @@
+/*认证弹出层*/
+.none{display:none}
+.zhezhao{width:100%;position:fixed;left:0;top:0;height:100%;z-index:9;background-color:rgba(178,178,178,.3)}
+.ok-tan{display:none;width:94%;padding:10px 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position:fixed;
+    left:50%;
+    margin-left:-47%;
+    top:5%;
+    background-color:white;
+    z-index:10;
+    border-radius:2px
+}
+.ok-tan .p-t{width:100%;text-align:center;height:25px;line-height:20px;color:#333333;font-size:1.2em;border-bottom:1px solid #e4e4e4}
+.p-info{width:100%;margin-bottom:0px;font-size:1.1em;}
+.p-info.m10{margin-top:10px}
+.p-info .s01{color:#f75b5c;}
+.p-info .s02{color:#333333;}
+.{width:100%;height:45px;margintanBtn-top:15px;}
+.tanBtn a{width:40%;display:inline-block;height:35px;line-height:35px;text-align:center;color:white;font-size:1.2em;background-color:#f75b5c;border-radius:5px;}
+.speciala{width:40%;display:inline-block;height:35px;line-height:35px;text-align:center;color:white;font-size:1.2em;background-color:#f75b5c;border-radius:5px;}
+.tanBtn a.b1{float:left;margin-left:5%}
+.tanBtn a.b2{float:right;margin-right:5%}

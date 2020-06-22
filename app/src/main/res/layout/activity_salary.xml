@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|"
+    android:orientation="vertical"
+    android:background="@color/main_color">
+
+    <include layout="@layout/toolbar" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/shape_line_white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/red"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/salary_"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+        <TextView android:id="@+id/s_shengyu"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="0.00"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/red">
+
+        <LinearLayout android:id="@+id/coupon_tab_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:onClick="tabOnClick">
+
+            <TextView
+                android:layout_width="360px"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/salary_total"
+                android:textColor="@android:color/white"
+                android:gravity="left"
+                android:layout_marginLeft="10px"
+                android:padding="5dp"/>
+
+            <TextView android:id="@+id/record_1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout android:id="@+id/coupon_tab_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:onClick="tabOnClick">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/salary_alredy_get"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:padding="5dp"/>
+
+            <TextView android:id="@+id/record_2"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout android:id="@+id/coupon_tab_3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:onClick="tabOnClick">
+
+
+            <TextView
+                android:layout_width="360px"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/salary_coupon_"
+                android:textColor="@android:color/white"
+                android:gravity="left"
+                android:layout_marginLeft="10px"
+                android:padding="5dp"/>
+
+            <TextView android:id="@+id/record_3"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/my_recharge"
+            style="?android:textAppearanceSmall"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/salary_coupon"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_rectangle_rounded_red"
+            android:layout_marginRight="5dp"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/my_withdraw"
+            style="?android:textAppearanceSmall"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/salary_get"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_rectangle_rounded_orange"
+            android:onClick="onClick"/>
+
+
+    </LinearLayout>
+
+    <com.ant.recharge.common.pull2fresh.PullToRefreshListView
+        android:layout_marginTop="5dp"
+        android:id="@+id/coupon_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </com.ant.recharge.common.pull2fresh.PullToRefreshListView>
+
+</LinearLayout>

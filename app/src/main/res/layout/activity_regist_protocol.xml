@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color">
+
+    <include android:id="@+id/p_top"
+        layout="@layout/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <RelativeLayout android:id="@+id/p_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:id="@+id/action_confirm"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/action_confirm"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_rectangle_rounded_red"
+            android:onClick="onClick"/>
+
+
+    </RelativeLayout>
+
+    <WebView android:id="@+id/p_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/p_top"
+        android:layout_above="@+id/p_bottom"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@android:color/white"
+        android:scrollbars="none">
+
+
+    </WebView>
+
+</RelativeLayout>

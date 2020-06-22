@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_color">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView android:id="@+id/salary_coupon_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/sign_in_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_alignParentBottom="true"
+            android:text="申请兑换"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_rectangle_rounded_red"
+            android:onClick="onClick"/>
+
+        <com.ant.recharge.common.pull2fresh.PullToRefreshListView
+            android:layout_marginTop="15dp"
+            android:id="@+id/coupon_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/sign_in_button"
+            android:listSelector="@android:color/transparent">
+        </com.ant.recharge.common.pull2fresh.PullToRefreshListView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

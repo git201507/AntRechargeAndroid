@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/planner_t2"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+
+    <com.ant.recharge.common.pull2fresh.PullToRefreshListView
+        android:id="@+id/planner_list_vipsalary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null">
+    </com.ant.recharge.common.pull2fresh.PullToRefreshListView>
+
+</LinearLayout>

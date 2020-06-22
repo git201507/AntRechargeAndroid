@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ant.recharge">
+
+    <!---->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 屏幕关闭，后台可以继续运行 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- call phone -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".application.MyApplication">
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcome.WelcomeActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppfullScreem">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.RegistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.UpdatePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ProtocolActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 标的详情 -->
+        <activity
+            android:name=".fragment1.FinancialDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment1.FinancialBuyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment1.FinancialVIPDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".fragment1.FinancialDetailViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment1.ImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragment1.planner.PlannerSelectActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的账户 -->
+        <activity
+            android:name=".account.AccountInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- vip会员 -->
+        <activity
+            android:name=".fragment2.vip.VipDescriptionActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 钻石会员 -->
+        <activity
+            android:name=".fragment2.memberlevel.MemberLevelDescriptionActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 理财师 -->
+        <activity
+            android:name=".fragment2.planner.PlannerDescriptionActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 认证 -->
+        <activity
+            android:name=".verified.VerifiedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".verified.VerifiedSuccessActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 我推荐的人 -->
+        <activity
+            android:name=".member.MemberActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 消息 -->
+        <activity
+            android:name=".message.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".message.MessageDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 充值 -->
+        <activity
+            android:name=".recharge.RechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".webview.WebviewZjActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 提现 -->
+        <activity
+            android:name=".withdraw.WithdrawActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 优惠券 -->
+        <activity
+            android:name=".coupon.CouponActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 蚂蚁工资 -->
+        <activity
+            android:name=".salary.SalaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".salary.SalaryWithDrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".salary.SalaryCouponActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 我的分享 -->
+        <activity
+            android:name=".fragment2.myshare.MyShareActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 理财记录 -->
+        <activity
+            android:name=".manage.ManageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 资金记录 -->
+        <activity
+            android:name=".financial.FinancialActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".common.NetworkErrActivity" />
+        <activity
+            android:name=".main.MainActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- 主界面:包含四个Tab按钮 -->
+        <activity
+            android:name=".main.MainTabActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- 照片放大 -->
+        <activity
+            android:name=".order.PhotoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 订单列表 -->
+        <activity
+            android:name=".order.OrderActivity"
+            android:screenOrientation="portrait" />
+        <!-- 订单详情 -->
+        <activity
+            android:name=".order.DelegateOrderChangeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的收藏 -->
+        <activity
+            android:name=".favor.FavorsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 我的收藏 -->
+        <activity
+            android:name=".main.CityPickerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 订单筛选 -->
+        <activity
+            android:name=".order.ScreenOrderActivity"
+            android:label="@string/title_activity_screen_order"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <!-- 订单支付 -->
+        <activity
+            android:name=".webview.WebviewYLActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".paymax.PaymaxActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 个人信息管理 -->
+        <activity
+            android:name=".member.PersonInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 代理商信息 -->
+        <activity android:name=".login.RegistDelegateActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <!-- 注册微信 -->
+        <activity
+            android:name="com.swwx.paymax.PaymentActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity-alias
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.swwx.paymax.PaymentActivity" />
+
+
+        <!-- 注册支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+    </application>
+
+</manifest>

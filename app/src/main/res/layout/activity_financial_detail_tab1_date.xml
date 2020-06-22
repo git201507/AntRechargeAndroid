@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/a_1_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:padding="10dp">
+
+    <TextView android:id="@+id/fd_date_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hint_color"
+        android:layout_marginTop="5dp"
+        android:text="@string/finance_detail_date1"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView android:id="@+id/fd_date_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/hint_color"
+        android:text="@string/finance_detail_date2"
+        android:layout_marginTop="5dp"/>
+
+    <TextView android:id="@+id/fd_date_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/hint_color"
+        android:text="@string/finance_detail_date3"
+        android:layout_marginTop="5dp"/>
+
+
+</LinearLayout>

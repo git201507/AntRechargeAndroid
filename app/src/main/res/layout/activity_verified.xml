@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|"
+    android:orientation="vertical"
+    android:background="@color/main_color">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@android:color/white">
+
+                <include layout="@layout/icon_login_pass" />
+
+                <EditText
+                    android:id="@+id/v_nmae"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/verified_hint_name"
+                    android:textColorHint="@color/hint_color"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    android:background="@null"
+                    android:textCursorDrawable="@drawable/cursor_red"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:background="@android:color/white">
+
+                <include layout="@layout/icon_login_pass" />
+
+                <EditText
+                    android:id="@+id/v_idcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/verified_hint_no"
+                    android:textColorHint="@color/hint_color"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:padding="10dp"
+                    android:background="@null"
+                    android:textCursorDrawable="@drawable/cursor_red"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/verified_btn"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="35dp"
+                android:text="@string/verified_btn"
+                android:textSize="@dimen/sp_20"
+                android:textColor="@android:color/white"
+                android:background="@drawable/shape_rectangle_rounded_red"
+                android:onClick="onClick"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+                <TextView android:id="@+id/regist_protocal"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verified_get_around"
+                    android:textSize="@dimen/sp_14"
+                    android:clickable="true"
+                    android:onClick="onClick"/>
+
+                <View
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/regist_protocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignRight="@+id/regist_protocal"
+                    android:background="@color/red"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

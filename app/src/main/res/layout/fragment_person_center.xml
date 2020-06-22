@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/radioTab">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:background="@color/line_blue"
+            >
+
+            <LinearLayout android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/person_name"
+                    android:textColor="@android:color/white"/>
+
+                <TextView android:id="@+id/person_center_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="许总"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/person_tel"
+                    android:textColor="@android:color/white"/>
+
+                <TextView android:id="@+id/person_center_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12345678"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/person_saler"
+                    android:textColor="@android:color/white"/>
+
+                <TextView android:id="@+id/person_center_saler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="销售代表"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/person_total_money"
+                    android:textColor="@android:color/white"/>
+
+                <TextView android:id="@+id/person_center_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100万"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_line_white"/>
+        -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/person_center_orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/right_icon"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center_vertical">
+                </ImageView>
+
+
+
+                <ImageView android:id="@+id/icon3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/jilu"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center_vertical">
+                </ImageView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/icon3"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/person_my_orders"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/line"/>
+            <RelativeLayout android:id="@+id/person_center_favors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/right_icon"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center_vertical">
+                </ImageView>
+
+
+
+                <ImageView android:id="@+id/icon4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/money"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center_vertical">
+                </ImageView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/icon4"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/person_my_favors"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout android:id="@+id/person_info_management"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="85dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <ImageView android:layout_centerInParent="true"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/modify_person"
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="@string/person_manage_title"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/update_password"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="85dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <ImageView android:layout_centerInParent="true"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/update_password"
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="修改密码"/>
+
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="85dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <ImageView android:layout_centerInParent="true"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/logout_person"
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="退出登录"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

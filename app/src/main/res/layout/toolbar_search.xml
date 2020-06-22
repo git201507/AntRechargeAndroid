@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/nav_bg">
+
+    <Button
+        android:id="@+id/btn_screen"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/buttonstyle"
+        android:onClick="onClick"
+        android:scaleType="fitXY"
+        android:text="筛选"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_12" />
+
+    <EditText android:id="@+id/edit_search"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_toRightOf="@id/btn_screen"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/sp_16"
+        android:hint="@string/liang_search"
+        android:layout_toLeftOf="@+id/btn_search"
+        android:layout_alignBaseline="@+id/btn_search"
+        android:background="@drawable/buttonstyle_white"
+        android:textCursorDrawable="@drawable/cursor_red"
+        android:maxLength="11"
+        android:textColorHint="@color/color_4c4c4c"
+        android:inputType="phone"/>
+
+    <ImageView android:id="@+id/btn_search"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/search"
+        android:onClick="onClick"/>
+
+</RelativeLayout>

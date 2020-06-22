@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/fd_top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/fd_buttom"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_alignParentBottom="true"
+        android:text="@string/vip_btn_"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape_rectangle_rounded_red"
+        android:onClick="onClick"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fd_buttom"
+        android:layout_below="@+id/fd_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@android:color/white">
+
+
+                <TextView android:id="@+id/fd_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/b_1_value"
+                        android:text="@string/b_1"
+                        android:textColor="@color/hint_color"
+                        />
+
+                    <TextView android:id="@+id/b_1_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp_18"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/b_2_value"
+                        android:layout_alignLeft="@+id/b_2_value"
+                        android:text="@string/b_2"
+                        android:textColor="@color/hint_color"
+                        />
+
+                    <TextView android:id="@+id/b_2_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp_18"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView android:id="@+id/fd_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/hint_color"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/b_4"
+                        android:textColor="@color/hint_color"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:padding="10dp"
+                android:layout_marginTop="13dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/vip_pre_money"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView android:id="@+id/df_money_last"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/red"
+                    android:layout_marginTop="5dp"
+                    />
+            </RelativeLayout>
+
+
+            <RadioGroup
+                android:id="@+id/radioTab"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginTop="13dp"
+                android:checkedButton="@+id/a_1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@color/red">
+
+
+                <RadioButton android:id="@+id/a_1"
+                    android:text="@string/finance_detail_message1"
+                    style="@style/biao"
+                    android:layout_marginBottom="1px"
+                    />
+
+                <RadioButton android:id="@+id/a_2"
+                    android:text="@string/finance_detail_message2"
+                    style="@style/biao"
+                    />
+
+                <RadioButton android:id="@+id/a_3"
+                    android:text="@string/finance_detail_message32"
+                    style="@style/biao"/>
+            </RadioGroup>
+
+
+            <!-- 投资信息 -->
+            <include layout="@layout/activity_financial_detail_tab1_date" />
+
+            <!-- 汇票信息 -->
+            <include layout="@layout/activity_financial_detail_tab2_message" />
+
+            <!-- 投标记录 -->
+            <include layout="@layout/activity_financial_detail_tab3_vip_intestment" />
+
+
+            <!-- 图片验证码 -->
+            <include layout="@layout/activity_financial_detail_vip_input" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

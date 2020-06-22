@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|"
+    android:orientation="vertical"
+    android:background="@color/main_color">
+
+    <include layout="@layout/toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/shape_line_white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/red">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/record_1"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/record_2"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/record_3"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:padding="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView android:id="@+id/record_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+            <TextView android:id="@+id/record_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+            <TextView android:id="@+id/record_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioTab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:checkedButton="@+id/financial_radio_1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/red">
+
+
+        <RadioButton android:id="@+id/financial_radio_1"
+            android:text="@string/record_tab_1"
+            style="@style/biao" />
+
+        <RadioButton android:id="@+id/financial_radio_2"
+            android:text="@string/record_tab_2"
+            style="@style/biao"/>
+
+        <RadioButton android:id="@+id/financial_radio_3"
+            android:text="@string/record_tab_3"
+            style="@style/biao"/>
+    </RadioGroup>
+
+    <com.ant.recharge.common.pull2fresh.PullToRefreshListView
+        android:layout_marginTop="15dp"
+        android:id="@+id/financial_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.ant.recharge.common.pull2fresh.PullToRefreshListView>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioGroup android:id="@+id/radioTab"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:checkedButton="@+id/tab_recommend"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <RadioButton android:id="@+id/tab_recommend"
+                android:text="@string/recommend_tab_string"
+                android:drawableTop="@android:drawable/ic_input_add"
+                style="@style/TabTheme"
+                />
+
+            <RadioButton android:id="@+id/tab_liang"
+                android:text="@string/liang_tab_string"
+                android:drawableTop="@android:drawable/ic_input_add"
+                style="@style/TabTheme"/>
+
+            <RadioButton android:id="@+id/tab_recharge"
+                android:text="@string/recharge_tab_string"
+                android:drawableTop="@android:drawable/ic_input_add"
+                style="@style/TabTheme"/>
+
+            <RadioButton android:id="@+id/tab_person_center"
+                android:text="@string/perconcenter_tab_string"
+                android:drawableTop="@android:drawable/ic_input_add"
+                style="@style/TabTheme"/>
+        </RadioGroup>
+        <com.ant.recharge.main.NoScrollViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/radioTab"
+            android:layout_alignParentTop="true">
+        </com.ant.recharge.main.NoScrollViewPager>
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/viewPager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_above="@+id/radioTab"-->
+            <!--android:layout_alignParentTop="true">-->
+        <!--</android.support.v4.view.ViewPager>-->
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 抽屉内容 -->
+    <RelativeLayout
+        android:id="@+id/drawer_content"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@android:color/white" />
+
+</android.support.v4.widget.DrawerLayout>

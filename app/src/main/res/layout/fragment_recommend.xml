@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_right" />
+    <include layout="@layout/fragment_recommend_header" />
+
+    <TextView android:id="@+id/text_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        style="@style/text_normal"
+        android:text="正在拼命加载中……"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="各大运营商"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/yunRadioTab"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:checkedButton="@+id/yun_r2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/red">
+
+        <RelativeLayout android:id="@+id/yun_r1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/selector_color_white">
+
+            <ImageView android:id="@+id/yun_radio_img1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                style="@style/recommend_number_style"
+                android:src="@drawable/runner_yd"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout android:id="@+id/yun_r2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/selector_color_white"
+            android:layout_marginBottom="0px">
+
+            <ImageView android:id="@+id/yun_radio_img2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                style="@style/recommend_number_style"
+                android:src="@drawable/runner_lt"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/yun_r3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/selector_color_white">
+
+            <ImageView android:id="@+id/yun_radio_img3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                style="@style/recommend_number_style"
+                android:src="@drawable/runner_dx"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.ant.recharge.common.pull2fresh.PullToRefreshListView
+            android:id="@+id/fragment_recommend_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null">
+        </com.ant.recharge.common.pull2fresh.PullToRefreshListView>
+
+    </FrameLayout>
+
+</LinearLayout>

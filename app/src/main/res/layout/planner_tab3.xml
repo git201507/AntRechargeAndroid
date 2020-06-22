@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/planner_t3"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:padding="@dimen/dp_24px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_b99b4c"
+        android:padding="@dimen/dp_24px">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/text_normal"
+            android:text="排名"
+            android:textColor="@color/color_ffffff"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/text_normal"
+            android:text="姓名"
+            android:textColor="@color/color_ffffff"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.6"
+            android:layout_height="wrap_content"
+            style="@style/text_normal"
+            android:text="近三月拉动"
+            android:textColor="@color/color_ffffff"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="wrap_content"
+            style="@style/text_normal"
+            android:text="赚取工资"
+            android:textColor="@color/color_ffffff"/>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/rank_first"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_normal"
+        android:text="恭喜您，您已经排名第一啦！"
+        android:textColor="@color/color_f34a49"
+        android:gravity="center"
+        android:padding="@dimen/dp_24px"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/planner_list_rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView android:id="@+id/rank_last"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_normal"
+        android:text="您已经最后一名了，努力加油吧！"
+        android:textColor="@color/color_f34a49"
+        android:gravity="center"
+        android:padding="@dimen/dp_24px"/>
+</LinearLayout>

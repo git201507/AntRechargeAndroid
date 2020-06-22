@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/personNameTV"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:layout_margin="10dp"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/personNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="XXX"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/personNameTV"
+                android:background="@drawable/shape_rectangle_rounded_stroke_gray"
+                android:textCursorDrawable="@drawable/cursor_red"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/accountNameTV"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="账号"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/accountNameET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPhonetic"
+            android:text="13888888888"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/accountNameTV"
+            android:layout_alignBaseline="@+id/accountNameTV"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/area_text_person"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:text="所属地区"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/area_text_person">
+
+            <Spinner
+                android:id="@+id/person_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+            <Spinner
+                android:id="@+id/person_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+            <TextView android:id="@+id/sex_text_person"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:text="性别"
+                android:textSize="18dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/sex_text_person">
+
+                <RadioGroup
+                    android:id="@+id/sex_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radioButtonMan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="男" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonWomen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="女" />
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/email_tv"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="邮箱"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/mailAddressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="sjdfisof@163.com"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/email_tv"
+            android:background="@drawable/shape_rectangle_rounded_stroke_gray"
+            android:textCursorDrawable="@drawable/cursor_red"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/salerTV"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:text="邀请人"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/salerET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/salerTV"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rectangle_rounded_stroke_gray"
+            android:ems="10"
+            android:hint="许术山"
+            android:inputType="textPersonName"
+            android:textCursorDrawable="@drawable/cursor_red" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/confirm_city_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_style"
+            android:onClick="onClick"
+            android:text="@string/action_confirm"
+            android:textColor="@color/color_white" />
+    </RelativeLayout>
+
+</LinearLayout>

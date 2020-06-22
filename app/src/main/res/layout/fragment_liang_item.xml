@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-suto/com.ant.recharge"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView android:id="@+id/liang_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/line_blue"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/liang_btn_addfavor"
+                android:layout_width="65dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="2dp"
+                android:background="@drawable/favor_number" />
+
+            <Button
+                android:id="@+id/liang_btn_buy"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/liang_btn_addfavor"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/liang_btn_addfavor"
+                android:background="@drawable/buy_number"
+                android:visibility="invisible"/>
+
+            <TableLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/liang_btn_buy"
+                android:layout_centerVertical="true">
+
+                <TableRow android:layout_marginBottom="5dp">
+                    <TextView android:id="@+id/liang_value_normalprize"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:text="¥1000元"/>
+                    <TextView android:id="@+id/liang_value_lowprize"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:text="优惠价:¥10元"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

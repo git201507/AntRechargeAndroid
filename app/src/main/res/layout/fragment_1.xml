@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <include layout="@layout/fragment_1_header" />
+
+    <TextView android:id="@+id/text_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        style="@style/text_normal"
+        android:text="正在拼命加载中……"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ant.recharge.common.pull2fresh.PullToRefreshListView
+            android:id="@+id/fragment1_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:divider="@null">
+        </com.ant.recharge.common.pull2fresh.PullToRefreshListView>
+
+
+        <TextView android:id="@+id/fragment1_vip"
+            android:background="@drawable/shape_rectangle_rounded_red_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:gravity="center"
+            android:text="VIP说明"
+            android:textColor="@android:color/white"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

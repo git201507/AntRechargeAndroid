@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/salary_salary"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="50px"
+        android:hint="@string/tx_1"
+        android:textColorHint="@color/hint_color"
+        android:textSize="30px"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:background="@android:color/white"
+        android:textCursorDrawable="@drawable/cursor_red"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@color/line"/>
+
+    <EditText
+        android:id="@+id/salary_realName"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="30px"
+        android:hint="@string/tx_2"
+        android:textColorHint="@color/hint_color"
+        android:singleLine="true"
+        android:background="@android:color/white"
+        android:textCursorDrawable="@drawable/cursor_red"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@color/line"/>
+
+    <EditText
+        android:id="@+id/salary_bankcode"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="30px"
+        android:hint="@string/tx_3"
+        android:textColorHint="@color/hint_color"
+
+        android:singleLine="true"
+        android:background="@android:color/white"
+        android:textCursorDrawable="@drawable/cursor_red"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@color/line"/>
+
+    <EditText
+        android:id="@+id/salary_bankname"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="30px"
+        android:hint="@string/tx_4"
+        android:textColorHint="@color/hint_color"
+
+        android:singleLine="true"
+        android:background="@android:color/white"
+        android:textCursorDrawable="@drawable/cursor_red"/>
+
+    <Button
+        android:id="@+id/sign_in_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:text="确认提现"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape_rectangle_rounded_red"
+        android:onClick="onClick"/>
+
+
+    <TextView android:id="@+id/salary_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/black_overlay"/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_search" />
+    <include layout="@layout/fragment_liang_header" />
+
+    <TextView android:id="@+id/text_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        style="@style/text_normal"
+        android:text="正在拼命加载中……"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ant.recharge.common.pull2fresh.PullToRefreshListView
+            android:id="@+id/fragment_liang_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:divider="@null">
+        </com.ant.recharge.common.pull2fresh.PullToRefreshListView>
+
+    </FrameLayout>
+
+</LinearLayout>

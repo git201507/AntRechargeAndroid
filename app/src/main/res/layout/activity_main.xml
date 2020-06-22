@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup android:id="@+id/radioTab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:checkedButton="@+id/tab_2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <RadioButton android:id="@+id/tab_1"
+            android:text="@string/tab_1"
+            android:drawableTop="@android:drawable/ic_input_add"
+            style="@style/TabTheme"
+            />
+
+        <RadioButton android:id="@+id/tab_2"
+            android:text="@string/tab_2"
+            android:drawableTop="@android:drawable/ic_input_add"
+            style="@style/TabTheme"/>
+
+        <RadioButton android:id="@+id/tab_3"
+            android:text="@string/tab_3"
+            android:drawableTop="@android:drawable/ic_input_add"
+            style="@style/TabTheme"/>
+
+        <RadioButton android:id="@+id/tab_4"
+            android:text="@string/tab_4"
+            android:drawableTop="@android:drawable/ic_input_add"
+            style="@style/TabTheme"/>
+    </RadioGroup>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radioTab"
+        android:layout_alignParentTop="true">
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

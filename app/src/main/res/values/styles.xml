@@ -1,0 +1,124 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppfullScreem" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@drawable/welcome_bg</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--
+        <item name="android:windowFullscreen">true</item>
+
+        -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- main groupradio style-->
+    <style name="TabTheme" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@drawable/selector_color_gray_to_blue</item>
+        <item name="android:background">@drawable/selector_color_white</item>
+    </style>
+
+    <!-- main groupradio style-->
+    <style name="biao" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/selector_color_gray_to_orange</item>
+        <item name="android:background">@drawable/selector_color_white</item>
+    </style>
+
+
+    <style name="text_base">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="text_normal" parent="text_base">
+        <item name="android:textColor">@color/color_808080</item>
+        <item name="android:textColorHint">@color/color_cccccc</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_red</item>
+    </style>
+
+
+    <!-- 验证码 -->
+    <style name="text_validate_code">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/line_blue</item>
+    </style>
+
+
+    <!-- 脚标   理财产品的tab右上角数字 -->
+    <style name="sub_number">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:background">@drawable/shape_ring_red</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/sp_8</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- main recommend number style-->
+    <style name="recommend_number_style" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/selector_color_gray_to_orange</item>
+        <item name="android:background">@drawable/selector_color_white</item>
+    </style>
+
+    <!-- liang number style-->
+    <style name="liang_number_style" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/selector_color_gray_to_orange</item>
+        <item name="android:background">@drawable/selector_color_white</item>
+    </style>
+</resources>

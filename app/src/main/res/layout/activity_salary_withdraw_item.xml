@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+<!-- 我的蚂蚁工资列表-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView android:id="@+id/sw_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/red"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <TextView android:id="@+id/financial_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/shape_ring_red"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp_8"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginRight="5dp"/>
+
+            <TextView android:id="@+id/financial_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:textSize="@dimen/sp_14"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/sw_bankCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black_overlay"
+            android:textSize="@dimen/sp_12"/>
+
+
+        <TextView android:id="@+id/sw_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black_overlay"
+            android:textSize="@dimen/sp_12"/>
+    </RelativeLayout>
+</LinearLayout>
